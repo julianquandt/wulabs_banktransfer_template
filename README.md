@@ -22,6 +22,10 @@ To make use of them follow these steps:
 - To activate the survey, click on `Survey Project > Project Settings` and then on `Release The Survey`. On this page, set an `Administration Period`. Afterwards, click on the Save button in the upper right corner.
 - ![image](https://github.com/julianquandt/wulabs_soscisurvey_banktransfer_template/assets/24586635/8bb55bda-2d73-4901-9364-e16e343606cf)
 - Use the link provided after activating to link to your survey after the experiment is completed.
+- To download the payout data, click on `Collected Data > Download Data` and click the `Download` option next to `Dataset`
+- ![image](https://github.com/julianquandt/wulabs_soscisurvey_banktransfer_template/assets/24586635/34d5dd12-9c06-4a63-9843-6d2d7424647e)
+
+
 
 # Functionality
 
@@ -37,6 +41,8 @@ Moreover, the IBAN is stripped from spaces and converted to uppercase, to make c
 ## Where is there no field to enter the payment amount?
 
 The survey does not include a field where participants enter their payment amount themselves (for obvious reasons). 
+If you still want to do this because referral is not an option, you can include a field for a participant ID that you can tell your participants in advance, and a payment field in the `Compose Questionnaire` in SoSciSurvey. 
+The questions have already been pre-implemented and only need to be drag-and-dropped into the survey.
 Instead, the amount should be retrieved from the experimental data, by transferring a participant identifier as URL parameters in the link referring to the survey. The details for different implementations (Qualtrics, oTree, Psychopy) are explained below.
 
 The survey will detect the following URL parameters automatically, if passed, and store them in the data frame:
@@ -46,9 +52,49 @@ The survey will detect the following URL parameters automatically, if passed, an
 - `PanelID` (useful for some Panels that use this referrer)
 - `payoff` (can be used to also transfer the payoff to the data frame, so you do not have to look it up in the experimental data for each participant; note that it is rather easy to change URL parameters and participants could potentially change their payoff entry in the data by changing the value in the url, so you should double check with the experimental data if in doubt).
 
+To clarify, if any of these strings is found in the URL that refers to the survey, they will be stored in the data.
+For example, if the participant opens a survey using the link
+
+`https://soscisurvey.wu.ac.at/my_supercool_experiment/?pid=1234&payoff=9.52`
+
  ### Referring from Qualtrics
 
-When you run the rest of your study in Qualtrics, you should link to the survey on the last page of your Qualtrics study. For this, you can create a participant identifier in Qualtrics and pass it on to SoScisurvey as `pid` URL parameter. Detailed instructions about how to implement this can be found [here](https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/passing-information-through-query-strings/#PassingInformationFromASurvey)
+When you run the rest of your study in Qualtrics, you should link to the survey on the last page of your Qualtrics study. For this, you can create a participant identifier in Qualtrics and pass it on to SoScisurvey as `pid` URL parameter. Detailed instructions about how to implement this can be found [here](https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/passing-information-through-query-strings/#PassingInformationFromASurvey).
+
+### Referring from oTree
+
+In otree, setting URL parameters can be done on the last page of the survey, by implementing this example code on the last page of your study.
+
+The following code assumes that `p_payoff` is the payoff variable defined in otree and that you have defined a participant identifier somewhere that is called `pid`.
+Remove the `,payoff,'=',payoff, '&',` if you only want to include the pid but not payoff amount in the data in SoSciSurvey (the `'?'` needs to stay included).
+
+```
+let link = 'https://soscisurvey.wu.ac.at/my_supercool_experiment/'; # replace the link with your own SoSciSurvey project. Make sure it ends with a / 
+$(document).ready(function() {
+    var payoff = js_vars.p_payoff;
+    var pid = js_vars.pid;
+    window.setTimeout(function() {
+        window.location.href = link.concat('?',payoff,'=',payoff, '&', 'pid', '=', pid);
+   }, 30000);});
+```
+
+### Referring from Psychopy
+
+In psychopy, to refer to the survey, you would include a trial including only a `Code` component:
+![image](https://github.com/julianquandt/wulabs_soscisurvey_banktransfer_template/assets/24586635/f7256554-a694-411e-9219-a40b5052abf4)
+Double click on the code component once added to the trial and copy paste the following code:
+
+```
+import webbrowser
+pid = expInfo['participant']
+if 'payoff' not in globals():
+    payoff = 'NA'
+link="https://soscisurvey.wu.ac.at/my_supercool_experiment/"+"?"+"pid="+str(pid)+"&payoff="+str(payoff)
+webbrowser.open(link)
+```
+
+Again change the link to your own survey.
+
 
 
  
