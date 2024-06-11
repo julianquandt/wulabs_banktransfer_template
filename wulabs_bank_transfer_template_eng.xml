@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE surveyProject SYSTEM "doctype.survey.dtd">
-<surveyProject version="2.4" timestamp="2024-06-11 12:44:22" program="oFb" progversion="3.5.06 1357">
-<title>WULABS Bank Transfer Template</title>
+<surveyProject version="2.4" timestamp="2024-06-11 16:04:12" program="oFb" progversion="3.5.06 1357">
+<title>WULABS Bank Transfer Template (english)</title>
 <description>This is a template that can be included in experiments at WULABS or online to request the relevant information for Bank Transfer administration with FIBU</description>
 <attributes.specific program="ofb">
 <attr id="language">eng</attr>
@@ -15,14 +15,8 @@
 <question>
 <description>NAME</description>
 <class>text</class>
-<title>
-<txt>Name</txt>
-<txt lng="ger">Name</txt>
-</title>
-<explanation>
-<txt>Please enter your First- and Last Name.</txt>
-<txt lng="ger">Bitte geben Sie Ihren Vor- und Nachnamen an.</txt>
-</explanation>
+<title>Name</title>
+<explanation>Please enter your First- and Last Name.</explanation>
 <inputPosition>right</inputPosition>
 <order>default</order>
 <attributes.specific program="ofb">
@@ -41,21 +35,13 @@
 <question>
 <description>Land (weltweit, in de+en)</description>
 <class>suggest</class>
-<title>
-<txt>Which is your current country of residence?</txt>
-<txt lng="ger">In welchem Land leben Sie derzeit?</txt>
-</title>
+<title>Which is your current country of residence?</title>
 <explanation>
-<txt><![CDATA[<!--
+<![CDATA[<!--
 Based in subsequent country lists (state 06/2013)
 http://en.wikipedia.org/wiki/ISO_3166-1_numeric
 http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_and_their_capitals_in_native_languages
--->]]></txt>
-<txt lng="ger"><![CDATA[<!--
-Basiert auf folgenden Länderlisten (Stand 06/2013)
-http://en.wikipedia.org/wiki/ISO_3166-1_numeric
-http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_and_their_capitals_in_native_languages
--->]]></txt>
+-->]]>
 </explanation>
 <inputPosition>right</inputPosition>
 <order>default</order>
@@ -70,7 +56,7 @@ http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_and_their_capita
 <attr id="metrics.width_texted">200</attr>
 <attr id="metrics.width_label">80</attr>
 <attr id="data">
-<txt><![CDATA[1001|Apsny;Abchasien;Аҧсны;Abkhaziya;Абхазия
+<![CDATA[1001|Apsny;Abchasien;Аҧсны;Abkhaziya;Абхазия
 4|Afghanestan;Afghanistan;افغانستان
 8|Albania;Shqipëria
 10|Antarctic
@@ -322,260 +308,7 @@ http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_and_their_capita
 732|Western Sahara
 887|Yemen;Al-Yaman;اليمن
 894|Zambia
-716|Zimbabwe]]></txt>
-<txt lng="ger"><![CDATA[1001|Abchasien;Apsny;Аҧсны;Abkhaziya;Абхазия
-4|Afghanistan;Afghanestan;افغانستان
-8|Albanien;Shqipëria
-10|Antarktis
-12|Algerien;Dzayer;ⴷⵣⴰⵢⴻⵔ;Al-Jazā'ir;الجزائر
-16|Amerikanische Samoa;Amerika Sāmoa;American Samoa
-20|Andorra;Andorra
-24|Angola;Angola
-660|Anguilla;Anguilla
-28|Antigua und Barbuda;Antigua and Barbuda
-32|Argentinien;Argentina
-51|Armenien;Hayastán;Հայաստան
-533|Aruba;Aruba;Aruba
-36|Australien;Australia
-40|Österreich;Austria
-31|Aserbaidschan;Azərbaycan
-44|Bahamas;The Bahamas
-48|Bahrain;Al-Baḥrayn;البحرين
-50|Bangladesch;Bangladesh;বাংলাদেশ
-52|Barbados;Barbados
-112|Belarus;Belarus’;Беларусь;Biełaruś;Belorussiya or Belorussiâ;Белоруссия
-56|Belgien;België;Belgique;Belgien
-248|Åland-Inseln;Åland;Ahvenanmaa
-84|Belize
-204|Benin;Bénin
-60|Bermuda
-64|Bhutan;Druk Yul;འབྲུག་ཡུལ
-68|Bolivien;Bolivia;Buliwya;Wuliwya;Volívia
-535|Karibische Niederlande;Caribisch Nederland;Bonaire, Sint Eustatius and Saba
-70|Bosnien und Herzegowina;Bosna i Hercegovina;Босна и Херцеговина
-72|Botswana
-76|Brasilien;Brasil
-74|Bouvet-Insel;Bouvetøya
-92|British Virgin Islands
-96|Brunei;Brunei;بروني
-86|Britisches Territorium im Indischen Ozean;Chagos Islands;फेहंद्वीप;Phehandweep;பேயிகான தீவுகள்;Paeikaana Theevukal;ފޭހަންދީބު;Feyhandheebu
-100|Bulgarien;Bulgariya or Bălgarija;България
-854|Burkina Faso
-104|Burma;Myanmar;မြန်မာ
-108|Burundi
-116|Kambodscha;Kampuchea;កម្ពុជា
-120|Kamerun;Cameroun;Cameroon
-124|Kanada;Canada
-132|Cape Verde;Cabo Verde
-136|Cayman Islands
-140|Zentralafrikanische Republik;République Centrafricaine;Ködörösêse tî Bêafrîka
-148|Chad;Tchad;Tšād;تشاد
-152|Chile
-156|China (Volksrepublik China);Zhōngguó (Zhōnghuá Rénmín Gònghéguó);中国 (中华人民共和国)
-162|Weihnachtsinsel
-166|Cocos Islands;Cocos Keeling Islands
-170|Kolumbien
-174|Komoren;Komori;Juzur al-Qamar;جزر القمر;Comores
-178|Republik Kongo;Congo;République du Congo;Congo-Brazzaville
-180|Demokratische Republik Kongo;République démocratique du Congo
-184|Cook Islands
-188|Costa Rica
-384|Côte d'Ivoire
-191|Kroatien;Hrvatska
-192|Kuba;Cuba
-531|Curaçao;Curaçao;Kòrsou
-196|Zypern;Kypros;Κύπρος;Kıbrıs
-203|Tschechische Republik;Česká republika;Česko
-208|Dänemark;Danmark
-262|Djibouti;Jībūtī;جيبوتي;Djibouti
-212|Dominica
-214|Dominikanische Republik;República Dominicana
-626|Osttimor;Timor Lorosa'e;Timor-Leste
-218|Ecuador
-818|Ägypten;Misr or Masr;مصر
-222|El Salvador
-226|Äquatorial-Guinea;Guinea Ecuatorial
-232|Eritrea;Iritriya;إرتريا;Erta;ኤርትራ
-233|Estland;Eesti
-231|Äthiopien;Ityop'ia;ኢትዮጵያ
-238|Falkland-Inseln
-234|Färöer-Inseln;Føroyar;Færøerne
-583|Föderierte Staaten von Mikronesien
-242|Fidschi;Fiji;Viti;फ़िजी
-246|Finnland;Suomi;Finland
-250|Frankreich
-254|Französisch-Guayana;Guyane
-258|Französisch-Polynesien;Polynésie française
-260|Französisch Southern Territories;Terres australes et antarctiques françaises;TAAF
-266|Gabun
-270|Gambia
-268|Georgia;Sak'art'velo;საქართველო
-276|Deutschland;Germany
-288|Ghana
-292|Gibraltar
-300|Griechenland;Hellas;Ελλάς or  Ellada;Ελλάδα
-304|Grönland;Kalaallit Nunaat;Grønland
-308|Grenada
-312|Guadeloupe
-316|Guam;Guåhån
-320|Guatemala;Guatemala
-831|Guernsey
-324|Guinea;Guinée;Gine;Gine
-624|Guinea-Bissau;Guiné-Bissau
-328|Guyana
-332|Haiti;Haïti;Ayiti
-334|Heard und McDonald-Inseln;HIMI
-336|Vatikanstadt;Città del Vaticano;Holy See
-340|Honduras
-344|Hong Kong;Heung Gong;香港
-348|Ungarn;Magyarország
-352|Island;Iceland
-356|Indien;Bharôt;ভাৰত;Bharot;ভারত;India, Hindustan;Bhārat;ભારત;Bhārat;भारत;Bhārata;ಭಾರತ;Bhārat;भारत;Inḍya, Bhāratam;ഇന്ത്യ, ഭാരതം;Bhārat;भारत;Bhārat;भारत;Bharôtô;ଭାରତ;Bhārat;ਭਾਰਤ;Bhāratam;भारतम्;Bhāratu;Indiyā, Bārata;இந்தியா, பாரத;Bhāratadēsham;భారత దేశం;Bhārat
-360|Indonesien;Indonesia
-364|Iran;Īrān;ایران
-368|Irak;Al-'Iraq;العراق;Îraq
-372|Irland;Éire;Ireland
-833|Isle of Man;Ellan Vannin
-376|Israel;yisrael;ישראל;Isrā'īl;إسرائيل
-380|Italien;Italia
-388|Jamaica
-392|Japan;Nihon;Nippon;日本
-832|Jersey;Jersey;Jersey;Jèrri
-400|Jordan;Al-’Urdun;الأردن
-398|Kasachstan;Qazaqstan;Қазақстан;قازاقستان;Kazakhstán;Казахстан
-404|Kenia
-296|Kiribati
-408|Nordkorea;Chosŏn;조선;朝鮮;Buk-han
-410|Südkorea;Hanguk;한국;韓國;Nam-josŏn
-1002|Kosovo;Kosova, Косово
-414|Kuwait;Al-Kuwayt;الكويت
-417|Kirgisistan;Kyrgyzstan;Кыргызстан;Kirgizija;Киргизия
-418|Laos;Lao;ປະເທດລາວ;Lao People's Democratic Republic
-428|Lettland;Latvija
-422|Libanon;Lubnān;لبنان
-426|Lesotho
-430|Liberia
-434|Libyen;Libya;ⵍⵉⴱⵢⴰ;Lībiyā;ليبيا
-438|Liechtenstein;Liechtenstein
-440|Litauen;Lietuva
-442|Luxemburg;Lëtzebuerg;Luxemburg;Luxembourg
-446|Macao;澳門;Macao
-807|Mazedonien;Makedonija;Македонија
-450|Madagaskar;Madagasikara;Madagascar
-454|Malawi
-458|Malaysien;Malaysia
-462|Malediven;Dhivehi Raajje;ދިވެހިރާއްޖެ
-466|Mali
-470|Malta
-584|Marshall Islands
-474|Martinique
-478|Mauretanien;Muritan / Agawec;ⵎⵓⵔⵉⵜⴰⵏ / ⴰⴳⴰⵡⵛ;Mūrītānyā;موريتانيا
-480|Mauritius;Maurice
-175|Mayotte;Mayotte
-484|Mexiko;México;Mēxihco
-498|Moldawien;Moldova
-492|Monaco
-496|Mongolei;Mongol Uls;Монгол Улс
-499|Montenegro;Crna Gora;Црна Гора
-500|Montserrat
-504|Marokko;Amerruk / Elmeɣrib;ⴰⵎⵔⵔⵓⴽ / ⵍⵎⵖⵔⵉⴱ;Al-maɣréb;المغرب
-508|Mosambik;Moçambique
-516|Namibia;Namibia
-520|Nauru;Nauru;Naoero
-524|Nepal;Nepāla;नेपाल
-528|Niederlande;Nederland;Nederlân
-540|Neukaledonien;Nouvelle-Calédonie
-554|Neuseeland;New Zealand;Aotearoa
-558|Nicaragua
-562|Niger
-566|Nigeria
-570|Niue;Niuē;Niue
-574|Norfolk-Insel
-580|Northern Mariana Islands
-1003|Nordzypern;Kuzey Kıbrıs
-578|Norwegen;Norge;Noreg
-512|Oman;‘Umān;عُمان
-586|Pakistan;Pākistān;پاکستان
-585|Palau;Belau
-275|Palästina;Palestinian National Authority;Filastīn;فلسطين
-591|Panama
-598|Papua-Neuguinea;Papua New Guinea;Papua Niugini;Papua Niugini
-600|Paraguay;Paraguay;Paraguái
-604|Peru;Perú
-608|Philippinen;Pilipinas;Philippines;Filipinas;pilipins;Filipinas;Pilipinas;Pilipinas;Filipinas;Pilipinas;Filipinas;Filipinas;Pilipinas
-612|Pitcairn Islands;Pitcairn
-616|Polen;Polska
-620|Portugal
-630|Puerto Rico
-634|Qatar;Qaṭar;قطر
-638|Réunion;Réunion
-642|Rumänien;România
-643|Russland;Rossiya or Rossiâ;Россия
-646|Ruanda
-652|Saint Barthélemy;Saint-Barthélemy
-654|St. Helena, Ascension und Tristan da Cunha
-659|St. Kitts und Nevis
-662|St. Lucia
-663|Sankt Martin;Saint-Martin
-666|Saint-Pierre und Miquelon;Saint-Pierre et Miquelon
-670|St. Vincent und die Grenadinen
-882|Samoa
-674|San Marino
-678|São Tomé und Príncipe;São Tomé e Príncipe
-682|Saudi-Arabien;Al-Mamlaka Al-‘Arabiyyah as Sa‘ūdiyyah;المملكة العربية السعودية
-686|Senegal;Sénégal
-688|Serbien;Србија
-690|Seychellen;Sesel;Seychelles;Seychelles
-694|Sierra Leone
-702|Singapur;Singapura;Singapore;Xīnjiāpō;新加坡;Singapur;சிங்கப்பூர்
-534|Sint Maarten;Sint Maarten;Sint Maarten
-703|Slowakei;Slovensko
-705|Slowenien;Slovenija
-90|Solomon Islands;Solomon Islands;Solomon Aelan
-706|Somalia;Soomaaliya;aş-Şūmāl;الصومال
-710|Südafrika;South Africa;Suid-Afrika;iNingizimu Afrika;uMzantsi Afrika;Afrika-Borwa;Afrika Borwa;Aforika Borwa;Afurika Tshipembe;Afrika Dzonga;iNingizimu Afrika;iSewula Afrika
-239|Süd-Georgien und Süd-Sandwich-Inseln;SGSSI
-1004|Südossetien;Khussar Iryston;Хуссар Ирыстон;Samkhret Oseti<br /> სამხრეთი ოსეთი;Южная Осетия;Yuzhnaya Osetiya
-728|Südsudan
-724|Spanien;España;Espanya;Espainia;Espanha
-144|Sri Lanka;Sri Lankā;ශ්�රී ලංකාව;இலங்கை
-729|Sudan;As-Sudan;السودان
-740|Suriname
-744|Svalbard;Svalbard and Jan Mayen
-748|Swaziland
-752|Schweden;Sverige
-756|Schweiz;Schweiz;Suisse;Svizzera;Svizra
-760|Syrien;Suriyah;سورية;Syrian Arab Republic
-158|Taiwan;Zhōnghuá Mínguó or Táiwan;中華民國;臺灣/台灣
-762|Tadschikistan;Tojikistan;Тоҷикистон
-834|Tansania
-764|Thailand;Mueang Thai, Prathet Thai, Ratcha-anachak Thai;เมืองไทย, ประเทศไทย, ราชอาณาจักรไทย
-768|Togo
-772|Tokelau
-776|Tonga;Tonga
-780|Trinidad und Tobago
-788|Tunesien;Tunes;ⵜⵓⵏⵙ;Tūns;تونس
-792|Türkei;Türkiye
-795|Turkmenistan;Türkmenistan
-796|Turks- und Caicosinseln
-798|Tuvalu
-800|Uganda
-804|Ukraine;Ukraїna;Україна
-784|Vereinigte Arabische Emirate;Al-’Imārat Al-‘Arabiyyah Al-Muttaḥidah;الإمارات العربيّة المتّحدة
-826|Großbritannien;United Kingdom;Y Deyrnas Unedig;Unitit Kinrick;Rìoghachd Aonaichte;Ríocht Aontaithe;An Rywvaneth Unys;UK;England
-840|Vereinigte Staaten von Amerika;United States;USA;États-Unis;'Amelika-hui-pu-'ia
-581|United States Minor Outlying Islands
-858|Uruguay;República Oriental del Uruguay
-860|Usbekistan;O‘zbekiston;Ўзбекистон
-548|Vanuatu;Vanuatu
-862|Venezuela
-704|Vietnam;Việt Nam
-850|United States Virgin Islands
-876|Wallis und Futuna;Wallis-et-Futuna
-732|Westsahara
-887|Jemen;Al-Yaman;اليمن
-894|Sambia
-716|Simbabwe]]></txt>
+716|Zimbabwe]]>
 </attr>
 <attr id="restrictions.valid">yes</attr>
 </attributes.specific>
@@ -583,15 +316,10 @@ http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_and_their_capita
 <question>
 <description>Place</description>
 <class>text</class>
-<title>
-<txt>Place and ZIP code</txt>
-<txt lng="ger">Ort und Postleitzahl</txt>
-</title>
+<title>Place and ZIP code</title>
 <explanation>
-<txt><![CDATA[For our internal financial accounting purposes, we kindly request your place of residence and ZIP code. Please note that due to data protection regulations, providing this information is not strictly mandated but we need this data for processing the payments. 
-This data is processed seperately from the other data collected in this study.]]></txt>
-<txt lng="ger"><![CDATA[Für unsere internen Zwecke der Finanzbuchhaltung bitten wir um Ihren Wohnort und Ihre Postleitzahl. Bitte beachten Sie, dass die Angabe dieser Informationen aufgrund der Datenschutzbestimmungen nicht zwingend erforderlich ist, wir jedoch diese Daten für die Zahlungsabwicklung benötigen.
-Diese Daten werden getrennt von den anderen in dieser Studie erhobenen Daten verarbeitet.]]></txt>
+<![CDATA[For our internal financial accounting purposes, we kindly request your place of residence and ZIP code. Please note that due to data protection regulations, providing this information is not strictly mandated but we need this data for processing the payments. 
+This data is processed seperately from the other data collected in this study.]]>
 </explanation>
 <inputPosition>right</inputPosition>
 <order>default</order>
@@ -600,20 +328,14 @@ Diese Daten werden getrennt von den anderen in dieser Studie erhobenen Daten ver
 <attr id="pos">3</attr>
 </attributes.specific>
 <item>
-<text>
-<txt>City</txt>
-<txt lng="ger">Wohnort</txt>
-</text>
+<text>City</text>
 <attributes.specific program="ofb">
 <attr id="id">1</attr>
 <attr id="pos">1</attr>
 </attributes.specific>
 </item>
 <item>
-<text>
-<txt>ZIP code</txt>
-<txt lng="ger">Postleitzahl</txt>
-</text>
+<text>ZIP code</text>
 <attributes.specific program="ofb">
 <attr id="id">2</attr>
 <attr id="pos">2</attr>
@@ -624,10 +346,7 @@ Diese Daten werden getrennt von den anderen in dieser Studie erhobenen Daten ver
 <description>IBAN</description>
 <class>text</class>
 <title>IBAN</title>
-<explanation>
-<txt>Please fill in your IBAN</txt>
-<txt lng="ger">Bitte geben Sie Ihre IBAN an. </txt>
-</explanation>
+<explanation>Please fill in your IBAN</explanation>
 <inputPosition>right</inputPosition>
 <order>default</order>
 <attributes.specific program="ofb">
@@ -657,8 +376,49 @@ Diese Daten werden getrennt von den anderen in dieser Studie erhobenen Daten ver
 <li i="10">Prolific_PID</li>
 <li i="11">pid</li>
 <li i="12">PanelID</li>
+<li i="13">payoff</li>
 </attr>
 </attributes.specific>
+</question>
+<question>
+<description>manual participant id</description>
+<class>text</class>
+<title>What was the participant ID that you got in the study?</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">16</attr>
+<attr id="pos">6</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>manual amount</description>
+<class>text</class>
+<title>What was the amount that you earned (In EUR with 2 decimals, e.g. 9.52)</title>
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">17</attr>
+<attr id="pos">7</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
 </question>
 </section>
 <layoutTexts>
@@ -865,7 +625,7 @@ Wirtschaftsuniversität Wien – 2024]]></txt></layoutText>
 
 &lt;/questionnaire&gt;</attr>
 <attr id="goodbye">
-<txt><![CDATA[<h1>Thank you for completing this questionnaire!</h1>
+<![CDATA[<h1>Thank you for completing this questionnaire!</h1>
 
 <p>We would like to thank you very much for helping us.</p>
 
@@ -874,17 +634,7 @@ Wirtschaftsuniversität Wien – 2024]]></txt></layoutText>
 <p>Your answers were transmitted, you may close the browser window or tab now.</p>
 
 <!-- Additional spacing (remove or adjust as required)  -->
-<div style="padding-bottom: 120px"></div>]]></txt>
-<txt lng="ger"><![CDATA[<h1>Thank you for completing this questionnaire!</h1>
-
-<p>We would like to thank you very much for helping us.</p>
-
-<!-- Insert information on the study or a contact option here -->
-
-<p>Your answers were transmitted, you may close the browser window or tab now.</p>
-
-<!-- Additional spacing (remove or adjust as required)  -->
-<div style="padding-bottom: 120px"></div>]]></txt>
+<div style="padding-bottom: 120px"></div>]]>
 </attr>
 <attr id="password">12345</attr>
 <attr id="selection">1</attr>
