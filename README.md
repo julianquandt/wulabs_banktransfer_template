@@ -5,6 +5,16 @@ The survey can be referred to from your study (from e.g. an oTree, Qualtrics or 
 This repository contains two files, an English version of the payout template (`wulabs_bank_transfer_template_eng.xml`), and a German version (`wulabs_bank_transfer_template_ger.xml`). 
 The two files are identical except for the language, so choose the one that matches the language of your experiment.
 
+# Table of Contents
+
+- [Usage](#usage)
+- [Functionality](#functionality)
+  - [IBAN Check](#iban-check)
+  - [Where is there no field to enter the payment amount?](#where-is-there-no-field-to-enter-the-payment-amount)
+  - [Referring from Qualtrics](#referring-from-qualtrics)
+  - [Referring from oTree](#referring-from-otree)
+  - [Referring from Psychopy](#referring-from-psychopy)
+
 # Usage
 
 The templates are designed to make their usage as easy as possible.
