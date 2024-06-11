@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE surveyProject SYSTEM "doctype.survey.dtd">
+<surveyProject version="2.4" timestamp="2024-06-11 12:55:51" program="oFb" progversion="3.5.06 1357">
+<title>WULABS Bank Transfer Template</title>
+<description>This is a template that can be included in experiments at WULABS or online to request the relevant information for Bank Transfer administration with FIBU</description>
+<attributes.specific program="ofb">
+<attr id="language">ger</attr>
+</attributes.specific>
+<section>
+<title>Bank Transfer Information</title>
+<attributes.specific program="ofb">
+<attr id="id">BT</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+<question>
+<description>NAME</description>
+<class>text</class>
+<title>Name</title>
+<explanation>Bitte geben Sie Ihren Vor- und Nachnamen an.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">1</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Land (weltweit, in de+en)</description>
+<class>suggest</class>
+<title>In welchem Land leben Sie derzeit?</title>
+<explanation>
+<![CDATA[<!--
+Basiert auf folgenden Länderlisten (Stand 06/2013)
+http://en.wikipedia.org/wiki/ISO_3166-1_numeric
+http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_and_their_capitals_in_native_languages
+-->]]>
+</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">12</attr>
+<attr id="pos">2</attr>
+<attr id="alignment">left</attr>
+<attr id="settings">
+<li i="0">0</li>
+<li i="1">0</li>
+</attr>
+<attr id="metrics.width_texted">200</attr>
+<attr id="metrics.width_label">80</attr>
+<attr id="data">
+<![CDATA[1001|Abchasien;Apsny;Аҧсны;Abkhaziya;Абхазия
+4|Afghanistan;Afghanestan;افغانستان
+8|Albanien;Shqipëria
+10|Antarktis
+12|Algerien;Dzayer;ⴷⵣⴰⵢⴻⵔ;Al-Jazā'ir;الجزائر
+16|Amerikanische Samoa;Amerika Sāmoa;American Samoa
+20|Andorra;Andorra
+24|Angola;Angola
+660|Anguilla;Anguilla
+28|Antigua und Barbuda;Antigua and Barbuda
+32|Argentinien;Argentina
+51|Armenien;Hayastán;Հայաստան
+533|Aruba;Aruba;Aruba
+36|Australien;Australia
+40|Österreich;Austria
+31|Aserbaidschan;Azərbaycan
+44|Bahamas;The Bahamas
+48|Bahrain;Al-Baḥrayn;البحرين
+50|Bangladesch;Bangladesh;বাংলাদেশ
+52|Barbados;Barbados
+112|Belarus;Belarus’;Беларусь;Biełaruś;Belorussiya or Belorussiâ;Белоруссия
+56|Belgien;België;Belgique;Belgien
+248|Åland-Inseln;Åland;Ahvenanmaa
+84|Belize
+204|Benin;Bénin
+60|Bermuda
+64|Bhutan;Druk Yul;འབྲུག་ཡུལ
+68|Bolivien;Bolivia;Buliwya;Wuliwya;Volívia
+535|Karibische Niederlande;Caribisch Nederland;Bonaire, Sint Eustatius and Saba
+70|Bosnien und Herzegowina;Bosna i Hercegovina;Босна и Херцеговина
+72|Botswana
+76|Brasilien;Brasil
+74|Bouvet-Insel;Bouvetøya
+92|British Virgin Islands
+96|Brunei;Brunei;بروني
+86|Britisches Territorium im Indischen Ozean;Chagos Islands;फेहंद्वीप;Phehandweep;பேயிகான தீவுகள்;Paeikaana Theevukal;ފޭހަންދީބު;Feyhandheebu
+100|Bulgarien;Bulgariya or Bălgarija;България
+854|Burkina Faso
+104|Burma;Myanmar;မြန်မာ
+108|Burundi
+116|Kambodscha;Kampuchea;កម្ពុជា
+120|Kamerun;Cameroun;Cameroon
+124|Kanada;Canada
+132|Cape Verde;Cabo Verde
+136|Cayman Islands
+140|Zentralafrikanische Republik;République Centrafricaine;Ködörösêse tî Bêafrîka
+148|Chad;Tchad;Tšād;تشاد
+152|Chile
+156|China (Volksrepublik China);Zhōngguó (Zhōnghuá Rénmín Gònghéguó);中国 (中华人民共和国)
+162|Weihnachtsinsel
+166|Cocos Islands;Cocos Keeling Islands
+170|Kolumbien
+174|Komoren;Komori;Juzur al-Qamar;جزر القمر;Comores
+178|Republik Kongo;Congo;République du Congo;Congo-Brazzaville
+180|Demokratische Republik Kongo;République démocratique du Congo
+184|Cook Islands
+188|Costa Rica
+384|Côte d'Ivoire
+191|Kroatien;Hrvatska
+192|Kuba;Cuba
+531|Curaçao;Curaçao;Kòrsou
+196|Zypern;Kypros;Κύπρος;Kıbrıs
+203|Tschechische Republik;Česká republika;Česko
+208|Dänemark;Danmark
+262|Djibouti;Jībūtī;جيبوتي;Djibouti
+212|Dominica
+214|Dominikanische Republik;República Dominicana
+626|Osttimor;Timor Lorosa'e;Timor-Leste
+218|Ecuador
+818|Ägypten;Misr or Masr;مصر
+222|El Salvador
+226|Äquatorial-Guinea;Guinea Ecuatorial
+232|Eritrea;Iritriya;إرتريا;Erta;ኤርትራ
+233|Estland;Eesti
+231|Äthiopien;Ityop'ia;ኢትዮጵያ
+238|Falkland-Inseln
+234|Färöer-Inseln;Føroyar;Færøerne
+583|Föderierte Staaten von Mikronesien
+242|Fidschi;Fiji;Viti;फ़िजी
+246|Finnland;Suomi;Finland
+250|Frankreich
+254|Französisch-Guayana;Guyane
+258|Französisch-Polynesien;Polynésie française
+260|Französisch Southern Territories;Terres australes et antarctiques françaises;TAAF
+266|Gabun
+270|Gambia
+268|Georgia;Sak'art'velo;საქართველო
+276|Deutschland;Germany
+288|Ghana
+292|Gibraltar
+300|Griechenland;Hellas;Ελλάς or  Ellada;Ελλάδα
+304|Grönland;Kalaallit Nunaat;Grønland
+308|Grenada
+312|Guadeloupe
+316|Guam;Guåhån
+320|Guatemala;Guatemala
+831|Guernsey
+324|Guinea;Guinée;Gine;Gine
+624|Guinea-Bissau;Guiné-Bissau
+328|Guyana
+332|Haiti;Haïti;Ayiti
+334|Heard und McDonald-Inseln;HIMI
+336|Vatikanstadt;Città del Vaticano;Holy See
+340|Honduras
+344|Hong Kong;Heung Gong;香港
+348|Ungarn;Magyarország
+352|Island;Iceland
+356|Indien;Bharôt;ভাৰত;Bharot;ভারত;India, Hindustan;Bhārat;ભારત;Bhārat;भारत;Bhārata;ಭಾರತ;Bhārat;भारत;Inḍya, Bhāratam;ഇന്ത്യ, ഭാരതം;Bhārat;भारत;Bhārat;भारत;Bharôtô;ଭାରତ;Bhārat;ਭਾਰਤ;Bhāratam;भारतम्;Bhāratu;Indiyā, Bārata;இந்தியா, பாரத;Bhāratadēsham;భారత దేశం;Bhārat
+360|Indonesien;Indonesia
+364|Iran;Īrān;ایران
+368|Irak;Al-'Iraq;العراق;Îraq
+372|Irland;Éire;Ireland
+833|Isle of Man;Ellan Vannin
+376|Israel;yisrael;ישראל;Isrā'īl;إسرائيل
+380|Italien;Italia
+388|Jamaica
+392|Japan;Nihon;Nippon;日本
+832|Jersey;Jersey;Jersey;Jèrri
+400|Jordan;Al-’Urdun;الأردن
+398|Kasachstan;Qazaqstan;Қазақстан;قازاقستان;Kazakhstán;Казахстан
+404|Kenia
+296|Kiribati
+408|Nordkorea;Chosŏn;조선;朝鮮;Buk-han
+410|Südkorea;Hanguk;한국;韓國;Nam-josŏn
+1002|Kosovo;Kosova, Косово
+414|Kuwait;Al-Kuwayt;الكويت
+417|Kirgisistan;Kyrgyzstan;Кыргызстан;Kirgizija;Киргизия
+418|Laos;Lao;ປະເທດລາວ;Lao People's Democratic Republic
+428|Lettland;Latvija
+422|Libanon;Lubnān;لبنان
+426|Lesotho
+430|Liberia
+434|Libyen;Libya;ⵍⵉⴱⵢⴰ;Lībiyā;ليبيا
+438|Liechtenstein;Liechtenstein
+440|Litauen;Lietuva
+442|Luxemburg;Lëtzebuerg;Luxemburg;Luxembourg
+446|Macao;澳門;Macao
+807|Mazedonien;Makedonija;Македонија
+450|Madagaskar;Madagasikara;Madagascar
+454|Malawi
+458|Malaysien;Malaysia
+462|Malediven;Dhivehi Raajje;ދިވެހިރާއްޖެ
+466|Mali
+470|Malta
+584|Marshall Islands
+474|Martinique
+478|Mauretanien;Muritan / Agawec;ⵎⵓⵔⵉⵜⴰⵏ / ⴰⴳⴰⵡⵛ;Mūrītānyā;موريتانيا
+480|Mauritius;Maurice
+175|Mayotte;Mayotte
+484|Mexiko;México;Mēxihco
+498|Moldawien;Moldova
+492|Monaco
+496|Mongolei;Mongol Uls;Монгол Улс
+499|Montenegro;Crna Gora;Црна Гора
+500|Montserrat
+504|Marokko;Amerruk / Elmeɣrib;ⴰⵎⵔⵔⵓⴽ / ⵍⵎⵖⵔⵉⴱ;Al-maɣréb;المغرب
+508|Mosambik;Moçambique
+516|Namibia;Namibia
+520|Nauru;Nauru;Naoero
+524|Nepal;Nepāla;नेपाल
+528|Niederlande;Nederland;Nederlân
+540|Neukaledonien;Nouvelle-Calédonie
+554|Neuseeland;New Zealand;Aotearoa
+558|Nicaragua
+562|Niger
+566|Nigeria
+570|Niue;Niuē;Niue
+574|Norfolk-Insel
+580|Northern Mariana Islands
+1003|Nordzypern;Kuzey Kıbrıs
+578|Norwegen;Norge;Noreg
+512|Oman;‘Umān;عُمان
+586|Pakistan;Pākistān;پاکستان
+585|Palau;Belau
+275|Palästina;Palestinian National Authority;Filastīn;فلسطين
+591|Panama
+598|Papua-Neuguinea;Papua New Guinea;Papua Niugini;Papua Niugini
+600|Paraguay;Paraguay;Paraguái
+604|Peru;Perú
+608|Philippinen;Pilipinas;Philippines;Filipinas;pilipins;Filipinas;Pilipinas;Pilipinas;Filipinas;Pilipinas;Filipinas;Filipinas;Pilipinas
+612|Pitcairn Islands;Pitcairn
+616|Polen;Polska
+620|Portugal
+630|Puerto Rico
+634|Qatar;Qaṭar;قطر
+638|Réunion;Réunion
+642|Rumänien;România
+643|Russland;Rossiya or Rossiâ;Россия
+646|Ruanda
+652|Saint Barthélemy;Saint-Barthélemy
+654|St. Helena, Ascension und Tristan da Cunha
+659|St. Kitts und Nevis
+662|St. Lucia
+663|Sankt Martin;Saint-Martin
+666|Saint-Pierre und Miquelon;Saint-Pierre et Miquelon
+670|St. Vincent und die Grenadinen
+882|Samoa
+674|San Marino
+678|São Tomé und Príncipe;São Tomé e Príncipe
+682|Saudi-Arabien;Al-Mamlaka Al-‘Arabiyyah as Sa‘ūdiyyah;المملكة العربية السعودية
+686|Senegal;Sénégal
+688|Serbien;Србија
+690|Seychellen;Sesel;Seychelles;Seychelles
+694|Sierra Leone
+702|Singapur;Singapura;Singapore;Xīnjiāpō;新加坡;Singapur;சிங்கப்பூர்
+534|Sint Maarten;Sint Maarten;Sint Maarten
+703|Slowakei;Slovensko
+705|Slowenien;Slovenija
+90|Solomon Islands;Solomon Islands;Solomon Aelan
+706|Somalia;Soomaaliya;aş-Şūmāl;الصومال
+710|Südafrika;South Africa;Suid-Afrika;iNingizimu Afrika;uMzantsi Afrika;Afrika-Borwa;Afrika Borwa;Aforika Borwa;Afurika Tshipembe;Afrika Dzonga;iNingizimu Afrika;iSewula Afrika
+239|Süd-Georgien und Süd-Sandwich-Inseln;SGSSI
+1004|Südossetien;Khussar Iryston;Хуссар Ирыстон;Samkhret Oseti<br /> სამხრეთი ოსეთი;Южная Осетия;Yuzhnaya Osetiya
+728|Südsudan
+724|Spanien;España;Espanya;Espainia;Espanha
+144|Sri Lanka;Sri Lankā;ශ්�රී ලංකාව;இலங்கை
+729|Sudan;As-Sudan;السودان
+740|Suriname
+744|Svalbard;Svalbard and Jan Mayen
+748|Swaziland
+752|Schweden;Sverige
+756|Schweiz;Schweiz;Suisse;Svizzera;Svizra
+760|Syrien;Suriyah;سورية;Syrian Arab Republic
+158|Taiwan;Zhōnghuá Mínguó or Táiwan;中華民國;臺灣/台灣
+762|Tadschikistan;Tojikistan;Тоҷикистон
+834|Tansania
+764|Thailand;Mueang Thai, Prathet Thai, Ratcha-anachak Thai;เมืองไทย, ประเทศไทย, ราชอาณาจักรไทย
+768|Togo
+772|Tokelau
+776|Tonga;Tonga
+780|Trinidad und Tobago
+788|Tunesien;Tunes;ⵜⵓⵏⵙ;Tūns;تونس
+792|Türkei;Türkiye
+795|Turkmenistan;Türkmenistan
+796|Turks- und Caicosinseln
+798|Tuvalu
+800|Uganda
+804|Ukraine;Ukraїna;Україна
+784|Vereinigte Arabische Emirate;Al-’Imārat Al-‘Arabiyyah Al-Muttaḥidah;الإمارات العربيّة المتّحدة
+826|Großbritannien;United Kingdom;Y Deyrnas Unedig;Unitit Kinrick;Rìoghachd Aonaichte;Ríocht Aontaithe;An Rywvaneth Unys;UK;England
+840|Vereinigte Staaten von Amerika;United States;USA;États-Unis;'Amelika-hui-pu-'ia
+581|United States Minor Outlying Islands
+858|Uruguay;República Oriental del Uruguay
+860|Usbekistan;O‘zbekiston;Ўзбекистон
+548|Vanuatu;Vanuatu
+862|Venezuela
+704|Vietnam;Việt Nam
+850|United States Virgin Islands
+876|Wallis und Futuna;Wallis-et-Futuna
+732|Westsahara
+887|Jemen;Al-Yaman;اليمن
+894|Sambia
+716|Simbabwe]]>
+</attr>
+<attr id="restrictions.valid">yes</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Place</description>
+<class>text</class>
+<title>Ort und Postleitzahl</title>
+<explanation>
+<![CDATA[Für unsere internen Zwecke der Finanzbuchhaltung bitten wir um Ihren Wohnort und Ihre Postleitzahl. Bitte beachten Sie, dass die Angabe dieser Informationen aufgrund der Datenschutzbestimmungen nicht zwingend erforderlich ist, wir jedoch diese Daten für die Zahlungsabwicklung benötigen.
+Diese Daten werden getrennt von den anderen in dieser Studie erhobenen Daten verarbeitet.]]>
+</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+<item>
+<text>Wohnort</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Postleitzahl</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>IBAN</description>
+<class>text</class>
+<title>IBAN</title>
+<explanation>Bitte geben Sie Ihre IBAN an.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">14</attr>
+<attr id="pos">4</attr>
+<attr id="restrictions.answered">yes</attr>
+</attributes.specific>
+<item>
+<text />
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>pid</description>
+<class>client</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">15</attr>
+<attr id="pos">5</attr>
+<attr id="settings">
+<li i="10">Prolific_PID</li>
+<li i="11">pid</li>
+<li i="12">PanelID</li>
+</attr>
+</attributes.specific>
+</question>
+</section>
+<questionnaire>
+<title>Bank Transfer Data Questionnaire</title>
+<attributes.specific program="ofb">
+<attr id="id">Q_BT</attr>
+<attr id="content">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;questionnaire&gt;
+
+&lt;!-- Page 1 --&gt;
+&lt;page ident=&quot;BT01&quot; intID=&quot;1&quot;&gt;
+&lt;question id=&quot;BT15&quot; intID=&quot;8&quot; /&gt;
+&lt;question id=&quot;BT02&quot; intID=&quot;3&quot; /&gt;
+&lt;question id=&quot;BT14&quot; intID=&quot;2&quot; /&gt;
+&lt;html intID=&quot;7&quot;&gt;&lt;![CDATA[
+&lt;script&gt;
+    function stripSpaces() {
+        var inputField = document.getElementById(&#039;BT14_01&#039;);
+        var inputValue = inputField.value;
+        // Remove all spaces from the input value
+        var cleanedValue = inputValue.replace(/\s+/g, &#039;&#039;);
+        cleanedValue = cleanedValue.toUpperCase();
+        // Update the input field with the cleaned value
+        inputField.value = cleanedValue;
+    }
+
+    // Attach the stripSpaces function to the input field&#039;s blur event
+    window.onload = function() {
+        var inputField = document.getElementById(&#039;BT14_01&#039;);
+        inputField.onblur = stripSpaces;
+    };
+
+    function showIBANInfo(iban) {
+        var isValid = isValidIBANNumber(iban);
+        var infoBox = document.getElementById(&#039;ibanInfoBox&#039;);
+        var submitButton = document.getElementById(&#039;submit0&#039;);
+
+        if (!infoBox) {
+            infoBox = document.createElement(&#039;div&#039;);
+            infoBox.id = &#039;ibanInfoBox&#039;;
+            infoBox.style.border = &#039;1px solid black&#039;;
+            infoBox.style.padding = &#039;10px&#039;;
+            infoBox.style.marginTop = &#039;10px&#039;;
+            infoBox.style.marginBottom = &#039;10px&#039;;
+            infoBox.style.backgroundColor = &#039;#f2f2f2&#039;;
+
+            var ibanInput = document.getElementById(&#039;BT14_01&#039;);
+            ibanInput.parentNode.insertBefore(infoBox, ibanInput.nextSibling);
+        }
+
+        if (isValid) {
+            if(survey_lang == &#039;ger&#039;){
+                infoBox.innerHTML = &#039;Gültige IBAN&#039;;
+            } else {
+                infoBox.innerHTML = &#039;Valid IBAN&#039;;
+            }
+
+            infoBox.style.color = &#039;green&#039;;
+            submitButton.classList.remove(&#039;disabled&#039;); // Use a class to indicate the state
+            removeWarningCheckbox();
+        } else {
+            if(survey_lang == &#039;ger&#039;){
+                infoBox.innerHTML = &#039;Ungültige IBAN (bitte überprüfen). Sollten Sie keinen Fehler feststellen können, senden Sie Ihre Angaben bitte dennoch ab.&#039;;
+            } else {
+                infoBox.innerHTML = &#039;Invalid IBAN (please check). If you cannot find any errors, please submit your information anyway.&#039;;
+            }
+            infoBox.style.color = &#039;red&#039;;
+            submitButton.classList.add(&#039;disabled&#039;); // Use a class to indicate the state
+        }
+    }
+
+    const url_params = new URLSearchParams(window.location.search);
+    const survey_lang = url_params.get(&#039;l&#039;);
+
+    /*
+     * Returns 1 if the IBAN is valid 
+     * Returns FALSE if the IBAN&#039;s length is not as should be (for CY the IBAN Should be 28 chars long starting with CY )
+     * Returns any other number (checksum) when the IBAN is invalid (check digits do not match)
+     */
+    function isValidIBANNumber(input) {
+        var CODE_LENGTHS = {
+            AD: 24, AE: 23, AT: 20, AZ: 28, BA: 20, BE: 16, BG: 22, BH: 22, BR: 29,
+            CH: 21, CR: 21, CY: 28, CZ: 24, DE: 22, DK: 18, DO: 28, EE: 20, ES: 24,
+            FI: 18, FO: 18, FR: 27, GB: 22, GI: 23, GL: 18, GR: 27, GT: 28, HR: 21,
+            HU: 28, IE: 22, IL: 23, IS: 26, IT: 27, JO: 30, KW: 30, KZ: 20, LB: 28,
+            LI: 21, LT: 20, LU: 20, LV: 21, MC: 27, MD: 24, ME: 22, MK: 19, MR: 27,
+            MT: 31, MU: 30, NL: 18, NO: 15, PK: 24, PL: 28, PS: 29, PT: 25, QA: 29,
+            RO: 24, RS: 22, SA: 24, SE: 24, SI: 19, SK: 24, SM: 27, TN: 24, TR: 26,   
+            AL: 28, BY: 28, CR: 22, EG: 29, GE: 22, IQ: 23, LC: 32, SC: 31, ST: 25,
+            SV: 28, TL: 23, UA: 29, VA: 22, VG: 24, XK: 20
+        };
+        var iban = String(input).toUpperCase().replace(/[^A-Z0-9]/g, &#039;&#039;), // keep only alphanumeric characters
+                code = iban.match(/^([A-Z]{2})(\d{2})([A-Z\d]+)$/), // match and capture (1) the country code, (2) the check digits, and (3) the rest
+                digits;
+        // check syntax and length
+        if (!code || iban.length !== CODE_LENGTHS[code[1]]) {
+            return false;
+        }
+        // rearrange country code and check digits, and convert chars to ints
+        digits = (code[3] + code[1] + code[2]).replace(/[A-Z]/g, function (letter) {
+            return letter.charCodeAt(0) - 55;
+        });
+        // final check
+        return mod97(digits) === 1;
+    }
+
+    function mod97(string) {
+        var checksum = string.slice(0, 2), fragment;
+        for (var offset = 2; offset &lt; string.length; offset += 7) {
+            fragment = String(checksum) + string.substring(offset, offset + 7);
+            checksum = parseInt(fragment, 10) % 97;
+        }
+        return checksum;
+    }
+
+    function createWarningCheckbox() {
+        var warningCheckboxContainer = document.getElementById(&#039;warningCheckbox&#039;);
+        var infoBox = document.getElementById(&#039;ibanInfoBox&#039;);
+        var submitButton = document.getElementById(&#039;submit0&#039;);
+
+        if (!warningCheckboxContainer &amp;&amp; infoBox) {
+            warningCheckboxContainer = document.createElement(&#039;div&#039;);
+            warningCheckboxContainer.id = &#039;warningCheckbox&#039;;
+            
+            if(survey_lang == &#039;ger&#039;){
+                warningCheckboxContainer.innerHTML = &#039;&lt;input type=&quot;checkbox&quot; id=&quot;acknowledgeCheckbox&quot;&gt;&#039; +
+                &#039;&lt;label for=&quot;acknowledgeCheckbox&quot;&gt;Ich habe meine IBAN sorgfältig überprüft und kann keine Fehler feststellen. Ich möchte meine Angaben mit dieser IBAN abschicken.&lt;/label&gt;&#039;;
+            } else {
+                warningCheckboxContainer.innerHTML = &#039;&lt;input type=&quot;checkbox&quot; id=&quot;acknowledgeCheckbox&quot;&gt;&#039; +
+                &#039;&lt;label for=&quot;acknowledgeCheckbox&quot;&gt;I have carefully checked my IBAN and cannot find any errors. I want to submit my entry with this IBAN.&lt;/label&gt;&#039;;
+            } 
+            infoBox.parentNode.insertBefore(warningCheckboxContainer, infoBox.nextSibling);
+
+            var acknowledgeCheckbox = document.getElementById(&#039;acknowledgeCheckbox&#039;);
+            acknowledgeCheckbox.addEventListener(&#039;change&#039;, function() {
+                if (acknowledgeCheckbox.checked) {
+                    submitButton.classList.remove(&#039;disabled&#039;); // enable when checkbox is checked
+                } else {
+                    submitButton.classList.add(&#039;disabled&#039;); // disable when checkbox is unchecked
+                }
+            });
+        }
+    }
+
+    function removeWarningCheckbox() {
+        var warningCheckboxContainer = document.getElementById(&#039;warningCheckbox&#039;);
+        if (warningCheckboxContainer) {
+            warningCheckboxContainer.remove();
+        }
+    }
+
+    document.addEventListener(&#039;DOMContentLoaded&#039;, function() {
+        var ibanInput = document.getElementById(&#039;BT14_01&#039;);
+        var submitButton = document.getElementById(&#039;submit0&#039;);
+
+        if (!ibanInput || !submitButton) {
+            console.error(&#039;IBAN input or submit button not found&#039;);
+            return;
+        }
+
+        submitButton.classList.add(&#039;disabled&#039;); // Initially disable the submit button
+
+        ibanInput.addEventListener(&#039;blur&#039;, function() {
+            showIBANInfo(ibanInput.value);
+        });
+
+        submitButton.addEventListener(&#039;click&#039;, function(event) {
+            if (submitButton.classList.contains(&#039;disabled&#039;)) {
+                var acknowledgeCheckbox = document.getElementById(&#039;acknowledgeCheckbox&#039;);
+                if (acknowledgeCheckbox &amp;&amp; acknowledgeCheckbox.checked) {
+                    // Allow submission if checkbox is checked
+                    return true;
+                } else {
+                    if(survey_lang == &#039;ger&#039;){
+                        alert(&#039;Die angegebene IBAN scheint ungültig zu sein. Bitte überprüfen Sie die IBAN noch einmal. Falls Sie keine Fehler finden können, kreuzen Sie bitte das entsprechende Feld an um anzugeben dass Sie trotz des fehlgeschlagenen IBAN checks die Angaben absenden möchten.&#039;);
+                    } else {
+                        alert(&#039;The provided IBAN seems to be invalid. Please check the IBAN again. If you cannot find any errors, please check the corresponding box to indicate that you wish to submit the information despite the failed IBAN check.&#039;);
+                    }
+                    createWarningCheckbox();
+                    event.preventDefault();
+                }
+            }
+        });
+    });
+&lt;/script&gt;
+&lt;style&gt;
+    .disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+&lt;/style&gt;
+]]&gt;&lt;/html&gt;
+&lt;question id=&quot;BT12&quot; intID=&quot;6&quot; /&gt;
+&lt;question id=&quot;BT04&quot; intID=&quot;5&quot; /&gt;
+&lt;postprocessing intID=&quot;4&quot;&gt;
+
+&lt;/postprocessing&gt;
+&lt;/page&gt;
+
+
+&lt;/questionnaire&gt;</attr>
+<attr id="goodbye">
+<![CDATA[<h1>Vielen Dank, dass Sie diesen Fragebogen ausgefüllt haben!</h1>
+
+<p>Wir möchten uns ganz herzlich bei Ihnen für Ihre Hilfe bedanken.</p>
+
+<!-- Informationen zur Studie oder eine Kontaktmöglichkeit hier einfügen -->
+
+<p>Ihre Antworten wurden übermittelt. Sie können das Browserfenster oder den Tab jetzt schließen.</p>
+
+<!-- Zusätzlicher Abstand (nach Bedarf entfernen oder anpassen)  -->
+<div style="padding-bottom: 120px"></div>
+]]>
+</attr>
+<attr id="password">12345</attr>
+<attr id="selection">1</attr>
+<attr id="probePreset">no</attr>
+</attributes.specific>
+</questionnaire>
+<setting name="DataFilter" key="df" encoding="json">
+{"mode.pretest":"yes","started.first":"","started.last":"","lastdata.first":"","lastdata.last":"","dfStatus":2}</setting>
+</surveyProject>
