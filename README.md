@@ -149,7 +149,7 @@ Thanks to Gabor Mozol for providing code for this template.
 - Change the text under `{{ block content }}` if you want the text to look different.
 - If you want to wait shorter or longer before referring participants to the Payout Survey, change the number `10000` in the third-last line to a smaller or larger value (it is the wait time in milliseconds so 10000 = 10 sec).
 
-SoSciSurvey will not detect that participants enter the survey with a defined `pid` (and `payoff` if you included it) variable in the URL and will automatically 
+SoSciSurvey will now detect that participants enter the survey with a defined `pid` (and `payoff` if you included it) variable in the URL and will automatically save these into the data.
 
 ### Referring from Psychopy
 
