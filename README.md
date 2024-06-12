@@ -87,6 +87,7 @@ $(document).ready(function() {
         window.location.href = link.concat('?',payoff,'=',payoff, '&', 'pid', '=', pid);
    }, 30000);});
 ```
+Thanks to Gabor Mozol for providing this snippet.
 
 ### Referring from Psychopy
 
