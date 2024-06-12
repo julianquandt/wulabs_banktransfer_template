@@ -63,9 +63,7 @@ The survey will detect the following URL parameters automatically, if passed, an
 - `payoff` (can be used to also transfer the payoff to the data frame, so you do not have to look it up in the experimental data for each participant; note that it is rather easy to change URL parameters and participants could potentially change their payoff entry in the data by changing the value in the url, so you should double check with the experimental data if in doubt).
 
 To clarify, if any of these strings is found in the URL that refers to the survey, they will be stored in the data.
-For example, if the participant opens a survey using the link
-
-`https://soscisurvey.wu.ac.at/my_supercool_experiment/?pid=1234&payoff=9.52`
+For example, if the participant opens a survey using the link `https://soscisurvey.wu.ac.at/my_supercool_experiment/?pid=1234&payoff=9.52`, the `1234` and `9.52` will automatically be saved.
 
  ### Referring from Qualtrics
 
