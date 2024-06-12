@@ -111,7 +111,7 @@ page_sequence = [Payout_Refer_Page]
 ```
 
 - Change the line that defines `payoff_eur` to include whatever bonus payment variable you are using for the participants in your experiment and, if needed, the `player.participant.code` to something else, if you do not want to use the oTree participant code as a pid identifer but instead e.g. a Qualtrics or Prolific code that you have passed into oTree at the start of the experiment.
-- In the `payoff_referral` folder, create a file called `Payout_Refer_Page.html` and copy the following:
+- In the `payoff_referral` folder, create a file called `Payout_Refer_Page.html` and copy the following into the file:
 
 ```
 {{ extends 'global/Page.html' }}
@@ -145,8 +145,11 @@ $(document).ready(function() {
 ```
 Thanks to Gabor Mozol for providing code for this template.
 
-Remove the `,payoff,'=',payoff, '&',` if you only want to include the pid but not payoff amount in the data in SoSciSurvey (the `'?'` needs to stay included).
-You can of course also change the text that will be displayed on screen.
+- Remove the `,payoff,'=',payoff, '&',` if you only want to include the pid but not payoff amount in the data in SoSciSurvey (the `'?'` needs to stay included).
+- Change the text under `{{ block content }}` if you want the text to look different.
+- If you want to wait shorter or longer before referring participants to the Payout Survey, change the number `10000` in the third-last line to a smaller or larger value (it is the wait time in milliseconds so 10000 = 10 sec).
+
+SoSciSurvey will not detect that participants enter the survey with a defined `pid` (and `payoff` if you included it) variable in the URL and will automatically 
 
 ### Referring from Psychopy
 
