@@ -50,7 +50,7 @@ Moreover, the IBAN is stripped from spaces and converted to uppercase, to make c
 
 ## Where is the field to enter the payment amount?
 
-The survey does not include a field where participants enter their payment amount themselves (for obvious reasons). 
+The survey does not include a field where participants enter their payment amount themselves by default as participants could just enter whatever payout of course. 
 If you still want to do this because referral is not an option, you can include a field for a participant ID that you can tell your participants in advance, and a payment field in the `Compose Questionnaire` in SoSciSurvey. 
 The questions have already been pre-implemented and only need to be drag-and-dropped into the survey.
 Preferably however, the amount should be retrieved from the experimental data, by transferring a participant identifier as URL parameters in the link referring to the survey. The details for different implementations (Qualtrics, oTree, Psychopy) are explained below.
