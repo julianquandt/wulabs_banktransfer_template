@@ -48,7 +48,7 @@ Once they submit the survey and the IBAN is still faulty, they will be asked to 
 This is mainly meant as a safeguard against some potential false positive errors in the IBAN checker and should not occur often.
 Moreover, the IBAN is stripped from spaces and converted to uppercase, to make copy pasting to the FIBU bank transfer form as simple as possible for researchers.
 
-## Where is there no field to enter the payment amount?
+## Where is the field to enter the payment amount?
 
 The survey does not include a field where participants enter their payment amount themselves (for obvious reasons). 
 If you still want to do this because referral is not an option, you can include a field for a participant ID that you can tell your participants in advance, and a payment field in the `Compose Questionnaire` in SoSciSurvey. 
