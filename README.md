@@ -10,7 +10,7 @@ The two files are identical except for the language, so choose the one that matc
 - [Usage](#usage)
 - [Functionality](#functionality)
   - [IBAN Check](#iban-check)
-  - [Where is the no field to enter the payment amount?](#where-is-there-no-field-to-enter-the-payment-amount)
+  - [Where is the field to enter the payment amount?](#where-is-there-no-field-to-enter-the-payment-amount)
     - [Referring from Qualtrics](#referring-from-qualtrics)
     - [Referring from oTree](#referring-from-otree)
     - [Referring from Psychopy](#referring-from-psychopy)
