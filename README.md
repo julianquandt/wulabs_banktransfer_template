@@ -109,7 +109,7 @@ page_sequence = [Payout_Refer_Page]
 ```
 
 - Change the line that defines `payoff_eur` to include whatever bonus payment variable you are using for the participants in your experiment and, if needed, the `player.participant.code` to something else, if you do not want to use the oTree participant code as a pid identifer but instead e.g. a Qualtrics or Prolific code that you have passed into oTree at the start of the experiment.
-- In the `payoff_referral` folder, create a file called `Payout_Refer_Page.html` and copy the following into the left code field that will open up:
+- In the `payoff_referral` folder, create a file called `Payout_Refer_Page.html` and copy paste the following code into the file:
 
 ```
 {{ extends 'global/Page.html' }}
@@ -153,7 +153,7 @@ SoSciSurvey will now detect that participants enter the survey with a defined `p
 
 In psychopy, to refer to the survey, you would include a trial including only a `Code` component:
 ![image](https://github.com/julianquandt/wulabs_soscisurvey_banktransfer_template/assets/24586635/f7256554-a694-411e-9219-a40b5052abf4)
-Double click on the code component once added to the trial and copy paste the following code:
+Double click on the code component once added to the trial and copy paste the following code into the left code field that will open up:
 
 ```
 import webbrowser
