@@ -73,21 +73,80 @@ When you run the rest of your study in Qualtrics, you should link to the survey 
 
 ### Referring from oTree
 
-In otree, setting URL parameters can be done on the last page of the survey, by implementing this example code on the last page of your study.
+In otree, setting URL parameters can be done on the last page of the survey, by including an `payout_referral` app at the end of your study. To do this:
 
-The following code assumes that `p_payoff` is the payoff variable defined in otree and that you have defined a participant identifier somewhere that is called `pid`.
-Remove the `,payoff,'=',payoff, '&',` if you only want to include the pid but not payoff amount in the data in SoSciSurvey (the `'?'` needs to stay included).
+- Add `payout_referral` to the `app_sequence` list in the `SESSION_CONFIGS` variable in your project's `settings.py` file.
+- Create a folder called `payout_referral` in your otree project directory and create a file called `__init.py__` in this directory that contains the following:
 
 ```
-let link = 'https://soscisurvey.wu.ac.at/my_supercool_experiment/'; # replace the link with your own SoSciSurvey project. Make sure it ends with a / 
+from otree.api import *
+
+doc = """
+This is a template for an exit survey linking to a SoSciSurvey payout survey.
+"""
+
+class C(BaseConstants):
+    NUM_ROUNDS = 1
+    PLAYERS_PER_GROUP = None
+    NAME_IN_URL = 'payout_referral'
+
+class Subsession(BaseSubsession):
+    pass
+
+class Group(BaseGroup):
+    pass
+
+class Player(BasePlayer):
+    pass
+
+# PAGES
+class Payout_Refer_Page(Page):
+    form_model = 'player'
+    @staticmethod
+    def js_vars(player: Player):
+        payoff_eur = session.config['participation_fee']+player.participant.payoff.to_real_world_currency(session) # note that this needs to change to your specific payout variable.
+        return dict(p_payoff = payoff_eur, p_participant = player.participant.code) # this returns the otree participant code, in case you are using something else, you need to change this.
+
+page_sequence = [Payout_Refer_Page]
+```
+
+- Change the line that defines `payoff_eur` to include whatever bonus payment variable you are using for the participants in your experiment and, if needed, the `player.participant.code` to something else, if you do not want to use the oTree participant code as a pid identifer but instead e.g. a Qualtrics or Prolific code that you have passed into oTree at the start of the experiment.
+- In the `payoff_referral` folder, create a file called `Payout_Refer_Page.html` and copy the following:
+
+```
+{{ extends 'global/Page.html' }}
+{{ block title }}End of experiment{{ endblock }}
+
+{{ block content }}
+
+<div class="container">
+    <p>
+        We have reached the end of the experiment. Thank you very much for participating! 
+    </p>
+    <p>
+        <b> In about 10 seconds, you will be redirected to a page where you need to enter your payment information.</b> Please do so, so we can pay you for your participation.
+    </p>
+</div>
+
+{{ endblock }}
+
+{{ block scripts }}
+<script>
+let link = 'https://soscisurvey.wu.ac.at/my_supercool_experiment/'; // replace the link with your own SoSciSurvey project. Make sure it ends with a / 
 $(document).ready(function() {
     var payoff = js_vars.p_payoff;
-    var pid = js_vars.pid;
+    var pid = js_vars.p_participant; // this pid needs to change to whatever you pass on from the js_vars function in the __init__.py file of the payout_referral module
     window.setTimeout(function() {
-        window.location.href = link.concat('?',payoff,'=',payoff, '&', 'pid', '=', pid);
-   }, 30000);});
+        window.location.href = link.concat('?','payoff','=',payoff, '&', 'pid', '=', pid);
+   }, 10000);});
+</script>
+{{ endblock }}
+
 ```
-Thanks to Gabor Mozol for providing this snippet.
+Thanks to Gabor Mozol for providing code for this template.
+
+Remove the `,payoff,'=',payoff, '&',` if you only want to include the pid but not payoff amount in the data in SoSciSurvey (the `'?'` needs to stay included).
+You can of course also change the text that will be displayed on screen.
 
 ### Referring from Psychopy
 
