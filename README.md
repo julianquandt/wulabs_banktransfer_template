@@ -109,7 +109,7 @@ page_sequence = [Payout_Refer_Page]
 ```
 
 - Change the line that defines `payoff_eur` to include whatever bonus payment variable you are using for the participants in your experiment and, if needed, the `player.participant.code` to something else, if you do not want to use the oTree participant code as a pid identifer but instead e.g. a Qualtrics or Prolific code that you have passed into oTree at the start of the experiment.
-- In the `payoff_referral` folder, create a file called `Payout_Refer_Page.html` and copy the following into the file:
+- In the `payoff_referral` folder, create a file called `Payout_Refer_Page.html` and copy the following into the left code field that will open up:
 
 ```
 {{ extends 'global/Page.html' }}
