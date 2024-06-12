@@ -105,7 +105,7 @@ webbrowser.open(link)
 ```
 
 Again change the link to your own survey.
-
+This code will automatically open the web browser after the psychopy experiment is completed, so it should always be the last part of your experiment.
 
 
  
