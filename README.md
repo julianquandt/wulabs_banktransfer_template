@@ -158,7 +158,7 @@ Double click on the code component once added to the trial and copy paste the fo
 ```
 import webbrowser
 pid = expInfo['participant']
-if 'payoff' not in globals():
+if 'payoff' not in globals(): // this checks if a payout is defined and otherwise will pass on NA if it is not. This means that you need to define a payoff variable somewhere in your experiment that keeps track of the earned amount if you want this to be useful.
     payoff = 'NA'
 link="https://soscisurvey.wu.ac.at/my_supercool_experiment/"+"?"+"pid="+str(pid)+"&payoff="+str(payoff)
 webbrowser.open(link)
