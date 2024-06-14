@@ -151,9 +151,9 @@ SoSciSurvey will now detect that participants enter the survey with a defined `p
 
 ### Referring from Psychopy
 
-In psychopy, to refer to the survey, you would include a trial including only a `Code` component:
+In psychopy, to refer to the survey, you would include a routine including only a `Code` component:
 ![image](https://github.com/julianquandt/wulabs_soscisurvey_banktransfer_template/assets/24586635/f7256554-a694-411e-9219-a40b5052abf4)
-Double click on the code component once added to the trial and copy paste the following code into the left code field that will open up:
+Double click on the code component once added to the routine and copy paste the following code into the left code field that will open up:
 
 ```
 import webbrowser
