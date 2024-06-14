@@ -71,7 +71,7 @@ When you run the rest of your study in Qualtrics, you should link to the survey 
 
 ### Referring from oTree
 
-In otree, setting URL parameters can be done on the last page of the survey, by including an `payout_referral` app at the end of your study. To do this:
+In otree, setting URL parameters can be achieved by including a `payout_referral` app at the end of your study. To do this:
 
 - Add `payout_referral` to the `app_sequence` list in the `SESSION_CONFIGS` variable in your project's `settings.py` file.
 - Create a folder called `payout_referral` in your otree project directory and create a file called `__init.py__` in this directory that contains the following:
